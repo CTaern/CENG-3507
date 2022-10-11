@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/ladokokofo/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <title>HW1--CENG3507</title>
+<style>
+  .toppart{
+    margin-left: 10%;
+    width: 85%;
+    border: 0px solid transparent;
+    position: absolute;
+  }
+  .topdate{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+  }
+  .topimg{
+    position: absolute;
+    top: 75px;
+  }
+  .topcontactinfo{
+    position: relative;
+    text-align: center;
+    top: 75px;
+  }
+ 
+  .bottompart{
+    margin-left: 10%;
+    width: 76%;
+    padding: 50px;
+    border: 2px dotted black;
+    top: 100px;
+    position: relative;
+   
+  }
+  </style>
+</head>
+<body>
+  <div class="toppart">
+   
+  <hr style="height: 10px; background-color: grey;">
+  <div class="topimg">
+    <img src="data:image/png;base64,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"
+         alt = "Avatar">
+    </div>
+ <div class="topdate">
+   <script>document.write(new Date().toLocaleDateString());</script></div>
+  </div>
+  <div class="topcontactinfo">
+    <p>Email: sherlokholmes@posta.com<br>
+      Phone: 111 111 11 11</p>
+    <hr style = "position: relative; top: 100px; width: 85%; margin-left: 10%;">
+    <strong style= "position: relative; top:125px;"> Sherlok Holmes </strong>
+    <p style ="position:relative; top:131px;">
+      221b Baker St, London/01.01.2001</p>
+    <hr style="position: relative; top: 135px;width: 85%;margin-left: 10%;">
+    <hr style="position: relative; top: 135px;width: 85%;margin-left: 10%;">
+    <strong style="position:relative; margin-left:-70%; top: 140px;">Skills</strong>
+    <p style = "position:relative; top: 105px;">Detective, AI, ML, Python, Java, JavaScript, Html, CSS, Network</p>
+    <hr style ="position:relative; width: 85%; margin-left: 10%; top:100px;">
+    <hr style ="position:relative; width: 85%; margin-left: 10%; top:100px;">
+    <strong style="position:relative; margin-left:-70%; top: 105px;">Education</strong>
+    <p style = "position:relative; top: 90px;">1.University Of Edinburg<br>
+    2.Yale University Master of Arts</p>
+    <hr style ="position:relative; width: 85%; margin-left: 10%; top:100px;">
+    <strong style="position:relative; margin-left:-70%; top: 105px;">Experience</strong>
+    <p style = "position:relative; top: 90px;">1.Detective at London</p>
+    <hr style ="position:relative; width: 85%; margin-left: 10%; top:100px; height: 5px; background-color:grey">
+      <div class="bottompart">
+        <strong>References</strong>
+        <p>* Arthur Conan Doyle British writer<br>
+          * Oscar Wilde Irish poet</p>
+       
+ 
+  </div>
+  </div>
+  </div>
+ 
+</body>
+</html>
